@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XX is the new social media</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!--導覽列-->
+    <nav>
+        <div class="container">
+            <h2 class="log">
+                HaoUSocial
+            </h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="尋找創作者、生活靈感來源、以及更多">
+            </div>
+            <!--導覽列大頭貼-->
+            <div class="create">
+                <label class="btn btn-primary" for="create post">撰寫</label>
+                <div class="profile-photo">
+                    <img src="img/profile-1.jpeg">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--主要介面區域-->
+    <main>
+    <div class="container">
+
+        <!--左邊區塊-->
+        <div class="left">
+            <a class="profile">
+                <div class="profile-photo">
+                    <img src="img/profile-1.jpeg">
+                </div>
+
+                <div class="handle">
+                    <h4>黃小宏</h4>
+                    <p class="text-muted">
+                        @DebH
+                    </p>
+                </div>
+            </a>
+
+            <!--sidebar-->
+            <div class="sidebar">
+                <a class="menu-item active">
+                    <span><i class="uil uil-home"></i></span><h3>首頁</h3>
+                </a>
+
+                <a class="menu-item" id="theme">
+                    <span><i class="uil uil-palette"></i></span><h3>主題</h3>
+                </a>
+
+                <a class="menu-item" id="notifications">
+                    <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h3>通知</h3>
+                    <!--通知跳出-->
+                    <div class="notification-popup">
+                        <div>
+                            <div class="profile-photo">
+                                <img src="img/profile-2.jpeg">
+                            </div>
+                            <div class="notification-body">
+                                <b>王小藍</b> 接受了你的交友邀請
+                                <small class="text-muted">2天前</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="profile-photo">
+                                <img src="img/profile-3.jpeg">
+                            </div>
+                            <div class="notification-body">
+                                <b>葉曉君</b> 對你的貼文發表了一則留言
+                                <small class="text-muted">一小時前</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="profile-photo">
+                                <img src="img/profile-4.jpeg">
+                            </div>
+                            <div class="notification-body">
+                                <b>梁義宣</b> 對你的貼文按讚
+                                <small class="text-muted">5分鐘前</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="profile-photo">
+                                <img src="img/profile-5.jpeg">
+                            </div>
+                            <div class="notification-body">
+                                <b>Lany Yeh</b> 對你的貼文發表了一則留言
+                                <small class="text-muted">2小時之前</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="profile-photo">
+                                <img src="img/profile-6.jpeg">
+                            </div>
+                            <div class="notification-body">
+                                <b>顏劭瑜</b> 分享了你的貼文
+                                <small class="text-muted">10分鐘前</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="profile-photo">
+                                <img src="img/profile-7.jpeg">
+                            </div>
+                            <div class="notification-body">
+                                <b>Leo Huang</b> 對你的貼文按讚
+                                <small class="text-muted">30分鐘前</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!--通知跳出code結束-->
+                </a>
+
+                <a class="menu-item" id="messages-notification">
+                    <span><i class="uil uil-message" ><small class="notification-count">2+</small></i></span><h3>訊息</h3>
+                </a>
+
+                <a class="menu-item" href="waterfall.html">
+                    <span><i class="uil uil-club"></i></span><h3>探索</h3>
+                </a>
+
+                <a class="menu-item">
+                    <span><i class="uil uil-setting"></i></span><h3>設定</h3>
+                </a>   
+               </form>
+            </div>
+            <!--sidebar結束-->
+            <label for="create-post" class="btn btn-primary">撰寫貼文</label>
+        </div>
+        <!--左邊區塊結束-->
+
+        <!--中間區塊-->
+        <div class="middle">
+            <!--撰寫貼文----------------------------------------------------->
+            <form class="create-post">
+                <div class="profile-photo">
+                    <img src="img/profile-1.jpeg">
+                </div>
+                <input type="text" placeholder="你在想甚麼呢，小宏?" id="create-post">
+                <input type="submit" value="發布" class="btn btn-primary">
+            </form>
+            
+            <!--貼文-->
+            <div class="feeds">
+                <!-----------------------------------------貼文一-->
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="img/profile-14.jpeg">
+                            </div>
+
+                            <div class="ingo">
+                                <h3>橘小紅</h3>
+                                <small>新竹, 20分鐘前</small>
+                            </div>
+                        </div>
+
+                        <span class="edit">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="img/feed-1.jpeg">
+                    </div>
+
+                    <div class="action-buttons">
+                        <div class="interation-buttons">
+                            <span><i class="uil uil-heart"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="img/profile-4.jpeg"></span>
+                        <span><img src="img/profile-6.jpeg"></span>
+                        <span><img src="img/profile-7.jpeg"></span>
+                        <p><b>林小綠</b>和<b>其他72人</b>都說讚</p>
+                    </div>
+
+                    <div class="caption">
+                        <p><b>王小蘭</b>今天是個適合讀書的日子，我好美。<span class="hash-tag">#人生勝利組</span></p>
+                        <div class="comments text-muted">查看15則留言</div>
+                    </div>
+                </div>
+
+                <!-----------------------------------------貼文二-->
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="img/profile-14.jpeg">
+                            </div>
+
+                            <div class="ingo">
+                                <h3>橘小紅</h3>
+                                <small>新竹, 20分鐘前</small>
+                            </div>
+                        </div>
+
+                        <span class="edit">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="img/feed-2.jpeg">
+                    </div>
+
+                    <div class="action-buttons">
+                        <div class="interation-buttons">
+                            <span><i class="uil uil-heart"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="img/profile-4.jpeg"></span>
+                        <span><img src="img/profile-6.jpeg"></span>
+                        <span><img src="img/profile-7.jpeg"></span>
+                        <p><b>林小綠</b>和<b>其他72人</b>都說讚</p>
+                    </div>
+
+                    <div class="caption">
+                        <p><b>王小蘭</b>今天是個適合讀書的日子，我好美。<span class="hash-tag">#人生勝利組</span></p>
+                        <div class="comments text-muted">查看15則留言</div>
+                    </div>
+                </div>
+
+                <!-----------------------------------------貼文三-->
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="img/profile-14.jpeg">
+                            </div>
+
+                            <div class="ingo">
+                                <h3>橘小紅</h3>
+                                <small>新竹, 20分鐘前</small>
+                            </div>
+                        </div>
+
+                        <span class="edit">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="img/feed-3.jpeg">
+                    </div>
+
+                    <div class="action-buttons">
+                        <div class="interation-buttons">
+                            <span><i class="uil uil-heart"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="img/profile-4.jpeg"></span>
+                        <span><img src="img/profile-6.jpeg"></span>
+                        <span><img src="img/profile-7.jpeg"></span>
+                        <p><b>林小綠</b>和<b>其他72人</b>都說讚</p>
+                    </div>
+
+                    <div class="caption">
+                        <p><b>王小蘭</b>今天是個適合讀書的日子，我好美。<span class="hash-tag">#人生勝利組</span></p>
+                        <div class="comments text-muted">查看15則留言</div>
+                    </div>
+                </div>
+
+                <!-----------------------------------------貼文四-->
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo">
+                                <img src="img/profile-14.jpeg">
+                            </div>
+
+                            <div class="ingo">
+                                <h3>橘小紅</h3>
+                                <small>新竹, 20分鐘前</small>
+                            </div>
+                        </div>
+
+                        <span class="edit">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="img/feed-4.jpeg">
+                    </div>
+
+                    <div class="action-buttons">
+                        <div class="interation-buttons">
+                            <span><i class="uil uil-heart"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="img/profile-4.jpeg"></span>
+                        <span><img src="img/profile-6.jpeg"></span>
+                        <span><img src="img/profile-7.jpeg"></span>
+                        <p><b>林小綠</b>和<b>其他72人</b>都說讚</p>
+                    </div>
+
+                    <div class="caption">
+                        <p><b>王小蘭</b>今天是個適合讀書的日子，我好美。<span class="hash-tag">#人生勝利組</span></p>
+                        <div class="comments text-muted">查看15則留言</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------------------------------------右邊區塊-->
+        <div class="right">
+            <div class="messages">
+                <div class="heading">
+                    <h4>Messages</h4><i class="uil uil-edit"></i>
+                </div>
+                <!-----------------------訊息搜尋區塊-->
+                <div class="search-bar">
+                    <i class="uil uil-search"></i>
+                    <input type="search" placeholder="尋找訊息" id="message-search">
+                </div>
+                <!-----------------------訊息分類-->
+                <div class="category">
+                    <h6 class="active">首要</h6>
+                    <h6>一般</h6>
+                    <h6 class="message-request">訊息要求(3)</h6>
+                </div>
+                <!-----------------------訊息-->
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="img/profile-8.jpeg">
+                    </div>
+                    <div class="user">
+                        <h5>律小梓</h5>
+                        <p class="text-muted">上周三的東西你還我了嗎？</p>
+                    </div>
+                </div>
+
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="img/profile-17.jpeg">
+                    </div>
+                    <div class="user">
+                        <h5>局小紅</h5>
+                        <p class="text-bold">那個超好笑，我看過</p>
+                    </div>
+                </div>
+
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="img/profile-10.jpeg">
+                        <div class="active"></div>
+                    </div>
+                    <div class="user">
+                        <h5>藍小律</h5>
+                        <p class="text-bold">您有兩則新訊息</p>
+                    </div>
+                </div>
+
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="img/profile-12.jpeg">
+                    </div>
+                    <div class="user">
+                        <h5>王小眳</h5>
+                        <p class="text-muted">這禮拜五出去嗎？</p>
+                    </div>
+                </div>
+
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="img/profile-18.jpeg">
+                    </div>
+                    <div class="user">
+                        <h5>林筱鴻</h5>
+                        <p class="text-muted">這禮拜六要去書店嗎？</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-----------------------交友邀請-->
+            <div class="friend-requests">
+                <h4>Requests</h4>
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="img/profile-16.jpeg">
+                        </div>
+                        <div>
+                            <h5>梓小紅</h5>
+                            <p class="text-muted">7位共同好友</p>
+                            <div class="action">
+                                <button class="btn btn-primary">接受</button>
+                                <button class="btn">拒絕</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="img/profile-13.jpeg">
+                        </div>
+                        <div>
+                            <h5>黃小明</h5>
+                            <p class="text-muted">23位共同好友</p>
+                            <div class="action">
+                                <button class="btn btn-primary">接受</button>
+                                <button class="btn">拒絕</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="img/profile-14.jpeg">
+                        </div>
+                        <div>
+                            <h5>葉小紅</h5>
+                            <p class="text-muted">11位共同好友</p>
+                            <div class="action">
+                                <button class="btn btn-primary">接受</button>
+                                <button class="btn">拒絕</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+    </main>
+
+    <!---------------------------------------------------主題變換-->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>選擇你喜歡的主題</h2>
+            <p class="text-muted">變換字體大小、顏色、以及背景</p>
+
+            <!---------------------------------------------------字體-->
+            <div class="font-size">
+                <h4>字體大小</h4>
+                <div>
+                    <h6>Aa</h6>
+                <div class="choose-size">
+                    <span class="font-size-1"></span>
+                    <span class="font-size-2 active"></span>
+                    <span class="font-size-3"></span>
+                    <span class="font-size-4"></span>
+                    <span class="font-size-5"></span>
+                </div>
+                <h3>Aa</h3>
+                </div>
+            </div>
+
+            <!---------------------------------------------------顏色-->
+            <div class="color">
+                <h4>顏色</h4>
+                <div class="choose-color">
+                    <span class="color-1 active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+
+            <!---------------------------------------------------背景顏色-->
+            <div class="background-color">
+                <h4>背景顏色</h4>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">明亮</h5>
+                    </div>
+
+                    <div class="bg-2">
+                        <span></span>
+                        <h5>稍暗</h5>
+                    </div>
+
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">夜間</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XX is the new social media</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="stylesheet" href="waterfall.css">
+
+</head>
+<body>
+    <!--導覽列-->
+    <nav>
+        <div class="container">
+            <h2 class="log">
+                HaoUSocial
+            </h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="尋找創作者、生活靈感來源、以及更多">
+            </div>
+            <!--導覽列大頭貼-->
+            <div class="create">
+                <label class="btn btn-primary" for="create post">撰寫</label>
+                <div class="profile-photo">
+                    <img src="img/profile-1.jpeg">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--主要介面區域-->
+    <main>
+    <div class="container">
+
+        <!--左邊區塊-->
+        <div class="left">
+            <a class="profile">
+                <div class="profile-photo">
+                    <img src="img/profile-1.jpeg">
+                </div>
+
+                <div class="handle">
+                    <h4>黃小宏</h4>
+                    <p class="text-muted">
+                        @DebH
+                    </p>
+                </div>
+            </a>
+
+            <!--sidebar-->
+            <div class="sidebar">
+                <a class="menu-item active">
+                    <span><i class="uil uil-home"></i></span><h3>首頁</h3>
+                </a>
+
+                <a class="menu-item" id="theme">
+                    <span><i class="uil uil-palette"></i></span><h3>主題</h3>
+                </a>
+
+                <a class="menu-item" id="notifications">
+                    <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h3>通知</h3>
+                    <!--通知跳出-->
+                    <div class="notification-popup">
+                        <div>
+                            <div class="profile-photo">
+                                <img src="img/profile-2.jpeg">
+                            </div>
+                            <div class="notification-body">
+                                <b>王小藍</b> 接受了你的交友邀請
+                                <small class="text-muted">2天前</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="profile-photo">
+                                <img src="img/profile-3.jpeg">
+                            </div>
+                            <div class="notification-body">
+                                <b>葉曉君</b> 對你的貼文發表了一則留言
+                                <small class="text-muted">一小時前</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="profile-photo">
+                                <img src="img/profile-4.jpeg">
+                            </div>
+                            <div class="notification-body">
+                                <b>梁義宣</b> 對你的貼文按讚
+                                <small class="text-muted">5分鐘前</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="profile-photo">
+                                <img src="img/profile-5.jpeg">
+                            </div>
+                            <div class="notification-body">
+                                <b>Lany Yeh</b> 對你的貼文發表了一則留言
+                                <small class="text-muted">2小時之前</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="profile-photo">
+                                <img src="img/profile-6.jpeg">
+                            </div>
+                            <div class="notification-body">
+                                <b>顏劭瑜</b> 分享了你的貼文
+                                <small class="text-muted">10分鐘前</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="profile-photo">
+                                <img src="img/profile-7.jpeg">
+                            </div>
+                            <div class="notification-body">
+                                <b>Leo Huang</b> 對你的貼文按讚
+                                <small class="text-muted">30分鐘前</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!--通知跳出code結束-->
+                </a>
+
+                <a class="menu-item" id="messages-notification">
+                    <span><i class="uil uil-message" ><small class="notification-count">2+</small></i></span><h3>訊息</h3>
+                </a>
+
+                <a class="menu-item" href="waterfall.html">
+                    <span><i class="uil uil-club"></i></span><h3>探索</h3>
+                </a>
+
+                <a class="menu-item">
+                    <span><i class="uil uil-setting"></i></span><h3>設定</h3>
+                </a>   
+               </form>
+            </div>
+            <!--sidebar結束-->
+            <label for="create-post" class="btn btn-primary">撰寫貼文</label>
+        </div>
+        <!--左邊區塊結束-->
+
+        <!--中間區塊-->
+        <div class="middle">
+            <div class="wrapper">
+                <div class="title">
+                  <h2>探索新靈感</h2>
+                </div>
+                <div class="photos" id="photos-container">
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/480?random=1" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/530?random=3" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/380?random=5" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/560?random=4" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/440?random=2" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/220?random=6" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/340?random=11" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/210?random=12" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/355?random=13" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/480?random=14" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/540?random=15" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/310?random=16" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/270?random=17" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/380?random=18" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/280?random=19" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/355?random=20" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/380?random=21" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/680?random=31" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/420?random=22" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/380?random=41" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/410?random=51" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/390?random=61" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/450?random=25" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/540?random=26" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/480?random=14" alt="photo">
+                    </div>
+                    <div class="photo">
+                        <img src="https://picsum.photos/360/440?random=15" alt="photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------------------------------------右邊區塊-->
+        <div class="right">
+            <div class="messages">
+                <div class="heading">
+                    <h4>Messages</h4><i class="uil uil-edit"></i>
+                </div>
+                <!-----------------------訊息搜尋區塊-->
+                <div class="search-bar">
+                    <i class="uil uil-search"></i>
+                    <input type="search" placeholder="尋找訊息" id="message-search">
+                </div>
+                <!-----------------------訊息分類-->
+                <div class="category">
+                    <h6 class="active">首要</h6>
+                    <h6>一般</h6>
+                    <h6 class="message-request">訊息要求(3)</h6>
+                </div>
+                <!-----------------------訊息-->
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="img/profile-8.jpeg">
+                    </div>
+                    <div class="users">
+                        <h5>律小梓</h5>
+                        <p class="text-muted">上周三的東西你還我了嗎？</p>
+                    </div>
+                </div>
+
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="img/profile-17.jpeg">
+                    </div>
+                    <div class="users">
+                        <h5>局小紅</h5>
+                        <p class="text-bold">那個超好笑，我看過</p>
+                    </div>
+                </div>
+
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="img/profile-10.jpeg">
+                        <div class="active"></div>
+                    </div>
+                    <div class="users">
+                        <h5>藍小律</h5>
+                        <p class="text-bold">您有兩則新訊息</p>
+                    </div>
+                </div>
+
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="img/profile-12.jpeg">
+                    </div>
+                    <div class="users">
+                        <h5>王小眳</h5>
+                        <p class="text-muted">這禮拜五出去嗎？</p>
+                    </div>
+                </div>
+
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="img/profile-18.jpeg">
+                    </div>
+                    <div class="users">
+                        <h5>林筱鴻</h5>
+                        <p class="text-muted">這禮拜六要去書店嗎？</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-----------------------交友邀請-->
+            <div class="friend-requests">
+                <h4>Requests</h4>
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="img/profile-16.jpeg">
+                        </div>
+                        <div>
+                            <h5>梓小紅</h5>
+                            <p class="text-muted">7位共同好友</p>
+                            <div class="action">
+                                <button class="btn btn-primary">接受</button>
+                                <button class="btn">拒絕</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="img/profile-13.jpeg">
+                        </div>
+                        <div>
+                            <h5>黃小明</h5>
+                            <p class="text-muted">23位共同好友</p>
+                            <div class="action">
+                                <button class="btn btn-primary">接受</button>
+                                <button class="btn">拒絕</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="img/profile-14.jpeg">
+                        </div>
+                        <div>
+                            <h5>葉小紅</h5>
+                            <p class="text-muted">11位共同好友</p>
+                            <div class="action">
+                                <button class="btn btn-primary">接受</button>
+                                <button class="btn">拒絕</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+    </main>
+
+    <!---------------------------------------------------主題變換-->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>選擇你喜歡的主題</h2>
+            <p class="text-muted">變換字體大小、顏色、以及背景</p>
+
+            <!---------------------------------------------------字體-->
+            <div class="font-size">
+                <h4>字體大小</h4>
+                <div>
+                    <h6>Aa</h6>
+                <div class="choose-size">
+                    <span class="font-size-1"></span>
+                    <span class="font-size-2 active"></span>
+                    <span class="font-size-3"></span>
+                    <span class="font-size-4"></span>
+                    <span class="font-size-5"></span>
+                </div>
+                <h3>Aa</h3>
+                </div>
+            </div>
+
+            <!---------------------------------------------------顏色-->
+            <div class="color">
+                <h4>顏色</h4>
+                <div class="choose-color">
+                    <span class="color-1 active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+
+            <!---------------------------------------------------背景顏色-->
+            <div class="background-color">
+                <h4>背景顏色</h4>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Lights</h5>
+                    </div>
+
+                    <div class="bg-2">
+                        <span></span>
+                        <h5>Dim</h5>
+                    </div>
+
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Lights Out</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="waterfall.js"></script>
+</body>
+</html>
